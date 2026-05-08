@@ -1,0 +1,68 @@
+using System.Xml;
+using Uno.Extensions.Specialized;
+using Windows.Storage.Pickers;
+
+namespace ViewMyInvoice.Services;
+
+internal record DocumentService : IDocumentService
+{
+    private const string SAVE_FILENAME = "edited_invoice.xml";
+
+    private readonly ILogger<DocumentService> _logger;
+
+    #region file pickers
+    private readonly Dictionary<string, IList<string>> _fileSavePickerTypes = new() {
+        { "XML", [ ".xml" ] },
+    };
+    private readonly FileSavePicker _fileSavePicker = new()
+    {
+        SuggestedStartLocation = PickerLocationId.DocumentsLibrary,
+        SuggestedFileName = SAVE_FILENAME,
+    };
+
+    private readonly IEnumerable<string> _fileOpenPickerTypes = [ ".xml" ];
+    private readonly FileOpenPicker _fileOpenPicker = new()
+    {
+        SuggestedStartLocation = PickerLocationId.DocumentsLibrary,
+    };
+    #endregion
+
+    public DocumentService(ILogger<DocumentService> logger)
+    {
+        _logger = logger;
+
+        _fileSavePickerTypes.ForEach((_, kv) => _fileSavePicker.FileTypeChoices.Add(kv.Key, kv.Value));
+        _fileOpenPickerTypes.ForEach((_, t) => _fileOpenPicker.FileTypeFilter.Add(t));
+    }
+
+    public async Task SaveDocument(XmlDocument document)
+    {
+        var saveFile = await _fileSavePicker.PickSaveFileAsync();
+        if (saveFile == null) return;
+        CachedFileManager.DeferUpdates(saveFile);
+
+        await FileIO.WriteTextAsync(saveFile, document.OuterXml);
+        await CachedFileManager.CompleteUpdatesAsync(saveFile);
+    }
+
+    public async Task<XmlDocument?> OpenDocument()
+    {
+        var pickedFile = await _fileOpenPicker.PickSingleFileAsync();
+        if (pickedFile == null) return default;
+
+        var text = await FileIO.ReadTextAsync(pickedFile);
+        try { return LoadXml(text); }
+        catch (Exception ex)
+        {
+            _logger.LogErrorMessage(ex.Message);
+            return default;
+        }
+    }
+
+    private static XmlDocument LoadXml(string text)
+    {
+        var xml = new XmlDocument();
+        xml.LoadXml(text);
+        return xml;
+    }
+}

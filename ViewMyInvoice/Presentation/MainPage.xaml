@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="ViewMyInvoice.Presentation.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ViewMyInvoice.Presentation"
+    xmlns:uen="using:Uno.Extensions.Navigation.UI"
+    xmlns:um="using:Uno.Material"
+    xmlns:utu="using:Uno.Toolkit.UI"
+    Background="{ThemeResource BackgroundBrush}"
+    NavigationCacheMode="Required">
+    <ScrollViewer IsTabStop="True">
+        <Grid utu:SafeArea.Insets="VisibleBounds">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <utu:NavigationBar Content="{Binding Title}" />
+
+            <!--  TODO: add file drop  -->
+            <StackPanel
+                Grid.Row="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Spacing="16">
+                <Button
+                    AutomationProperties.AutomationId="OpenDocumentButton"
+                    Command="{Binding OpenDocument}"
+                    Content="Open" />
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>

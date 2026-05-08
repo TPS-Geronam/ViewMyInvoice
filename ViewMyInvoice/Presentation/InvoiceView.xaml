@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="ViewMyInvoice.Presentation.InvoiceView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:datamodels="using:ViewMyInvoice.Models"
+    xmlns:local="using:ViewMyInvoice.Presentation"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:uen="using:Uno.Extensions.Navigation.UI"
+    xmlns:um="using:Uno.Material"
+    xmlns:utu="using:Uno.Toolkit.UI"
+    xmlns:viewmodels="using:ViewMyInvoice.Presentation"
+    Background="{ThemeResource BackgroundBrush}">
+    <Grid utu:SafeArea.Insets="VisibleBounds">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <utu:NavigationBar Content="Viewer" />
+
+        <GridView Grid.Row="1" ItemsSource="{Binding GroupedFields}">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="10" Orientation="Horizontal">
+                        <TextBlock FontWeight="Bold" Text="{Binding GroupName}" />
+
+                        <ItemsControl ItemsSource="{Binding Fields}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Width="100" Text="{Binding FieldInfo.FieldKey}" />
+                                        <TextBox Width="200" Text="{Binding Value, Mode=TwoWay}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+
+        <Button
+            Grid.Row="2"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            AutomationProperties.AutomationId="SaveDocumentButton"
+            Command="{Binding SaveDocument}"
+            Content="Save" />
+    </Grid>
+</Page>

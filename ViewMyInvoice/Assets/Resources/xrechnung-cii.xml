@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:CrossIndustryInvoice xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100">
+ <rsm:ExchangedDocumentContext>
+  <ram:BusinessProcessSpecifiedDocumentContextParameter>
+   <ram:ID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</ram:ID>
+</ram:BusinessProcessSpecifiedDocumentContextParameter>
+  <ram:GuidelineSpecifiedDocumentContextParameter>
+   <ram:ID>urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0</ram:ID>
+  </ram:GuidelineSpecifiedDocumentContextParameter>
+ </rsm:ExchangedDocumentContext>
+ <rsm:ExchangedDocument>
+  <ram:ID>1122334455</ram:ID>
+  <ram:TypeCode>380</ram:TypeCode>
+  <ram:IssueDateTime>
+   <udt:DateTimeString format="102">20241206</udt:DateTimeString>
+  </ram:IssueDateTime>
+  <ram:IncludedNote>
+   <ram:Content>Bitte geben Sie unbedingt die Rechnungsnummer + Kundennummer bei Zahlung oder Schriftverkehr an.</ram:Content>
+   <ram:SubjectCode>AAI</ram:SubjectCode>
+  </ram:IncludedNote>
+  <ram:IncludedNote>
+   <ram:Content>Eine Beanstandung dieser Rechnung ist innerhalb von 2 Wochen nach Erhalt schriftlich geltend zu machen.</ram:Content>
+   <ram:SubjectCode>ABC</ram:SubjectCode>
+  </ram:IncludedNote>
+  <ram:IncludedNote>
+   <ram:Content>Zusatzinformationen zu dieser Rechnung</ram:Content>
+   <ram:SubjectCode>ACB</ram:SubjectCode>
+  </ram:IncludedNote>
+ </rsm:ExchangedDocument>
+ <rsm:SupplyChainTradeTransaction>
+  <ram:IncludedSupplyChainTradeLineItem>
+   <ram:AssociatedDocumentLineDocument>
+    <ram:LineID>000010</ram:LineID>
+   </ram:AssociatedDocumentLineDocument>
+   <ram:SpecifiedTradeProduct>
+    <ram:SellerAssignedID>Eine vom Verkäufer zugewiesene Kennung für den Artikel z.B. Equipmentnummer</ram:SellerAssignedID>
+    <ram:BuyerAssignedID>Eine vom Käufer zugewiesene Kennung für den Artikel z.B. Identifikationsnummer</ram:BuyerAssignedID>
+    <ram:Name>Prüfung</ram:Name>
+    <ram:Description>Prüfung</ram:Description>
+   </ram:SpecifiedTradeProduct>
+   <ram:SpecifiedLineTradeAgreement>
+    <ram:BuyerOrderReferencedDocument>
+     <ram:LineID>Buyer-Bestellreferenz der Rechnungsposition</ram:LineID>
+     </ram:BuyerOrderReferencedDocument>
+    <ram:NetPriceProductTradePrice>
+     <ram:ChargeAmount>539.20</ram:ChargeAmount>
+    </ram:NetPriceProductTradePrice>
+   </ram:SpecifiedLineTradeAgreement>
+   <ram:SpecifiedLineTradeDelivery>
+    <ram:BilledQuantity unitCode="H87">1.000</ram:BilledQuantity>
+   </ram:SpecifiedLineTradeDelivery>
+   <ram:SpecifiedLineTradeSettlement>
+    <ram:ApplicableTradeTax>
+     <ram:TypeCode>VAT</ram:TypeCode>
+     <ram:CategoryCode>S</ram:CategoryCode>
+     <ram:RateApplicablePercent>19.00</ram:RateApplicablePercent>
+    </ram:ApplicableTradeTax>
+    <ram:BillingSpecifiedPeriod>
+     <ram:EndDateTime>
+      <udt:DateTimeString format="102">20241206</udt:DateTimeString>
+     </ram:EndDateTime>
+    </ram:BillingSpecifiedPeriod>
+    <ram:SpecifiedTradeSettlementLineMonetarySummation>
+     <ram:LineTotalAmount>539.20</ram:LineTotalAmount>
+    </ram:SpecifiedTradeSettlementLineMonetarySummation>
+	<ram:AdditionalReferencedDocument>
+     <ram:IssuerAssignedID>Zusatzinformationen zur eindeutigen Identifizierung eines Objekts oder einer Dienstleistung z.B. Kfz-Kennzeichen, Prüfberichtsnummer</ram:IssuerAssignedID>
+	 <ram:TypeCode>130</ram:TypeCode>
+</ram:AdditionalReferencedDocument>
+   </ram:SpecifiedLineTradeSettlement>
+  </ram:IncludedSupplyChainTradeLineItem>
+  <ram:ApplicableHeaderTradeAgreement>
+   <ram:BuyerReference>DE117658414</ram:BuyerReference>
+   <ram:SellerTradeParty>
+    <ram:Name>TÜV Rheinland GmbH</ram:Name>
+    <ram:Description>AG Köln HRB 12345|St.Nr.: 201/113/40209|Geschäftsführung: Max Mustermann       |Aufsichtsratsvorsitz: Dr.-Ing. Tim Tester</ram:Description>
+    <ram:SpecifiedLegalOrganization>
+     <ram:ID>DE123456789</ram:ID>
+     <ram:TradingBusinessName>TÜV Rheinland GmbH</ram:TradingBusinessName>
+    </ram:SpecifiedLegalOrganization>
+    <ram:DefinedTradeContact>
+     <ram:PersonName>Richard Roe</ram:PersonName>
+     <ram:TelephoneUniversalCommunication>
+      <ram:CompleteNumber>+49 221 806-0</ram:CompleteNumber>
+     </ram:TelephoneUniversalCommunication>
+     <ram:EmailURIUniversalCommunication>
+      <ram:URIID>richard.roe@tuv.com</ram:URIID>
+     </ram:EmailURIUniversalCommunication>
+    </ram:DefinedTradeContact>
+    <ram:PostalTradeAddress>
+     <ram:PostcodeCode>19053</ram:PostcodeCode>
+     <ram:LineOne>Am Grauen Stein</ram:LineOne>
+     <ram:CityName>Köln</ram:CityName>
+     <ram:CountryID>DE</ram:CountryID>
+    </ram:PostalTradeAddress>
+    <ram:URIUniversalCommunication>
+     <ram:URIID schemeID="9930">DE123456789</ram:URIID>
+    </ram:URIUniversalCommunication>
+    <ram:SpecifiedTaxRegistration>
+     <ram:ID schemeID="VA">DE123456789</ram:ID>
+    </ram:SpecifiedTaxRegistration>
+    <ram:SpecifiedTaxRegistration>
+     <ram:ID schemeID="FC">201/113/40209</ram:ID>
+    </ram:SpecifiedTaxRegistration>
+   </ram:SellerTradeParty>
+   <ram:BuyerTradeParty>
+    <ram:ID>0001213145</ram:ID>
+    <ram:Name>Kunde GmbH &amp; Co.KG</ram:Name>
+    <ram:SpecifiedLegalOrganization>
+     <ram:ID>DE987654321</ram:ID>
+     <ram:TradingBusinessName>Kunde GmbH &amp; Co.KG</ram:TradingBusinessName>
+    </ram:SpecifiedLegalOrganization>
+    <ram:PostalTradeAddress>
+     <ram:PostcodeCode>76138</ram:PostcodeCode>
+     <ram:LineOne>Musterstrasse 18</ram:LineOne>
+     <ram:CityName>Karlsruhe</ram:CityName>
+     <ram:CountryID>DE</ram:CountryID>
+     <ram:CountrySubDivisionName>Nrth Rhine Westfalia</ram:CountrySubDivisionName>
+    </ram:PostalTradeAddress>
+    <ram:URIUniversalCommunication>
+     <ram:URIID schemeID="EM">accounting@kunde.de</ram:URIID>
+    </ram:URIUniversalCommunication>
+    <ram:SpecifiedTaxRegistration>
+     <ram:ID schemeID="VA">DE987654321</ram:ID>
+    </ram:SpecifiedTaxRegistration>
+   </ram:BuyerTradeParty>
+   <ram:SellerOrderReferencedDocument>
+    <ram:IssuerAssignedID>Supplier-Auftragsnummer</ram:IssuerAssignedID>
+   </ram:SellerOrderReferencedDocument>
+   <ram:BuyerOrderReferencedDocument>
+    <ram:IssuerAssignedID>Buyer-Bestellreferenz</ram:IssuerAssignedID>
+   </ram:BuyerOrderReferencedDocument>
+   <ram:ContractReferencedDocument>
+    <ram:IssuerAssignedID>Vertragsreferenz</ram:IssuerAssignedID>
+   </ram:ContractReferencedDocument>
+   <ram:AdditionalReferencedDocument>
+    <ram:IssuerAssignedID>Ausschreibungsreferenz</ram:IssuerAssignedID>
+    <ram:TypeCode>916</ram:TypeCode>
+   </ram:AdditionalReferencedDocument>
+  </ram:ApplicableHeaderTradeAgreement>
+  <ram:ApplicableHeaderTradeDelivery>
+   <ram:ShipToTradeParty>
+    <ram:Name>Leistungsort</ram:Name>
+    <ram:PostalTradeAddress>
+     <ram:PostcodeCode>69876</ram:PostcodeCode>
+     <ram:LineOne>Musterstrasse    123</ram:LineOne>
+     <ram:CityName>Frankfurt</ram:CityName>
+     <ram:CountryID>DE</ram:CountryID>
+    </ram:PostalTradeAddress>
+   </ram:ShipToTradeParty>
+  </ram:ApplicableHeaderTradeDelivery>
+  <ram:ApplicableHeaderTradeSettlement>
+   <ram:PaymentReference>1122334455</ram:PaymentReference>
+   <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+   <ram:SpecifiedTradeSettlementPaymentMeans>
+    <ram:TypeCode>58</ram:TypeCode>
+    <ram:PayeePartyCreditorFinancialAccount>
+     <ram:IBANID>DE12500105170648489890</ram:IBANID>
+    </ram:PayeePartyCreditorFinancialAccount>
+    <ram:PayeeSpecifiedCreditorFinancialInstitution>
+     <ram:BICID>DRESDEFF370</ram:BICID>
+    </ram:PayeeSpecifiedCreditorFinancialInstitution>
+   </ram:SpecifiedTradeSettlementPaymentMeans>
+   <ram:ApplicableTradeTax>
+    <ram:CalculatedAmount>102.45</ram:CalculatedAmount>
+    <ram:TypeCode>VAT</ram:TypeCode>
+    <ram:BasisAmount>539.20</ram:BasisAmount>
+    <ram:CategoryCode>S</ram:CategoryCode>
+    <ram:RateApplicablePercent>19.00</ram:RateApplicablePercent>
+   </ram:ApplicableTradeTax>
+   <ram:BillingSpecifiedPeriod>
+    <ram:StartDateTime>
+     <udt:DateTimeString format="102">20241206</udt:DateTimeString>
+    </ram:StartDateTime>
+    <ram:EndDateTime>
+     <udt:DateTimeString format="102">20241206</udt:DateTimeString>
+    </ram:EndDateTime>
+   </ram:BillingSpecifiedPeriod>
+   <ram:SpecifiedTradePaymentTerms>
+    <ram:Description>Zahlung sofort ab Rechnungserhalt ohne Abzug, falls keine Vereinbarung getroffen</ram:Description>
+   </ram:SpecifiedTradePaymentTerms>
+   <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+    <ram:LineTotalAmount>539.20</ram:LineTotalAmount>
+    <ram:TaxBasisTotalAmount>539.20</ram:TaxBasisTotalAmount>
+    <ram:TaxTotalAmount currencyID="EUR">102.45</ram:TaxTotalAmount>
+    <ram:GrandTotalAmount>641.65</ram:GrandTotalAmount>
+    <ram:DuePayableAmount>641.65</ram:DuePayableAmount>
+   </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+  </ram:ApplicableHeaderTradeSettlement>
+ </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>
