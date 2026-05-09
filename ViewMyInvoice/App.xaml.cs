@@ -10,9 +10,11 @@ public partial class App : Application
     /// </summary>
     public App()
     {
+        Instance = this;
         this.InitializeComponent();
     }
 
+    internal static App? Instance { get; private set; }
     internal Window? MainWindow { get; private set; }
     internal IHost? Host { get; private set; }
 

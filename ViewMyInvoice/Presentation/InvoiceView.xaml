@@ -17,7 +17,15 @@
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-        <utu:NavigationBar Content="Viewer" />
+        <utu:NavigationBar Grid.Row="0" Content="Viewer" />
+
+        <Button
+            Grid.Row="0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            AutomationProperties.AutomationId="ChangeLanguageButton"
+            Command="{Binding ToggleLocalization}"
+            Content="{Binding CurrentCulture.NativeName}" />
 
         <GridView Grid.Row="1" ItemsSource="{Binding GroupedFields}">
             <GridView.ItemTemplate>
@@ -29,7 +37,10 @@
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
                                     <StackPanel Orientation="Horizontal">
-                                        <TextBlock Width="100" Text="{Binding FieldInfo.FieldKey}" />
+                                        <TextBlock
+                                            Width="100"
+                                            VerticalAlignment="Center"
+                                            Text="{Binding FieldInfo.FieldKey, Converter={StaticResource LocalizeConverter}}" />
                                         <TextBox Width="200" Text="{Binding Value, Mode=TwoWay}" />
                                     </StackPanel>
                                 </DataTemplate>
@@ -41,11 +52,15 @@
         </GridView>
 
         <Button
+            x:Uid="SaveDocumentButton"
             Grid.Row="2"
             HorizontalAlignment="Right"
             VerticalAlignment="Bottom"
             AutomationProperties.AutomationId="SaveDocumentButton"
-            Command="{Binding SaveDocument}"
-            Content="Save" />
+            Command="{Binding SaveDocument}" />
     </Grid>
+
+    <Page.Resources>
+        <viewmodels:LocalizeConverter x:Key="LocalizeConverter" />
+    </Page.Resources>
 </Page>

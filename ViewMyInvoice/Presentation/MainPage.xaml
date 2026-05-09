@@ -13,9 +13,8 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition />
-                <RowDefinition />
             </Grid.RowDefinitions>
-            <utu:NavigationBar Content="{Binding Title}" />
+            <utu:NavigationBar Grid.Row="0" Content="{Binding Title}" />
 
             <!--  TODO: add file drop  -->
             <StackPanel
@@ -24,9 +23,9 @@
                 VerticalAlignment="Center"
                 Spacing="16">
                 <Button
+                    x:Uid="OpenDocumentButton"
                     AutomationProperties.AutomationId="OpenDocumentButton"
-                    Command="{Binding OpenDocument}"
-                    Content="Open" />
+                    Command="{Binding OpenDocument}" />
             </StackPanel>
         </Grid>
     </ScrollViewer>

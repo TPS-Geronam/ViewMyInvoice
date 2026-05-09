@@ -38,7 +38,7 @@
     </UnoFeatures>
   </PropertyGroup>
     <ItemGroup>
-        <Content Include="Assets\Resources\xrechnung-cii.xml" />
+        <Content Include="Assets\Resources\*.xml" />
     </ItemGroup>
     <ItemGroup>
       <Compile Update="Presentation\InvoiceView.xaml.cs">

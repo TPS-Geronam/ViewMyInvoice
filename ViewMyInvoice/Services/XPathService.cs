@@ -17,6 +17,7 @@ internal class XPathService : IXPathService
         { "cac", "urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" },
         { "ext", "urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" },
         { "fx", "urn:factur-x:pdfa:CrossIndustryDocument:invoice:1p0#" },
+        { "ubl", "urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" },
         { "xs", "http://www.w3.org/2001/XMLSchema" },
     };
     private XmlNamespaceManager? _namespaceManager;
@@ -45,7 +46,9 @@ internal class XPathService : IXPathService
 
         if (_xPathCache.TryGetValue(mapping, out var node))
             return node;
-        return root.SelectSingleNode(query, _namespaceManager);
+        node = root.SelectSingleNode(query, _namespaceManager);
+        if (node != null) _xPathCache.Add(mapping, node);
+        return node;
     }
 
     private XmlNamespaceManager GetNamespaceManager(XmlDocument document)

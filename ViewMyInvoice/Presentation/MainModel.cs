@@ -3,14 +3,13 @@ using System.Xml;
 namespace ViewMyInvoice.Presentation;
 
 public partial record MainModel(
-    IStringLocalizer Localizer,
     IOptions<AppConfig> AppInfo,
     INavigator Navigator,
+    IStringLocalizer Localizer,
     IDocumentService DocumentService,
     IXPathService XPathService)
 {
     public string? Title { get; } = $"{Localizer["ApplicationName"]} - {AppInfo?.Value?.Environment}";
-    //public IState<string> Name => State<string>.Value(this, () => string.Empty);
 
     public async Task OpenDocument()
     {
