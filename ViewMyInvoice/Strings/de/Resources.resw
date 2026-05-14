@@ -711,4 +711,10 @@
   <data name="code_lists" xml:space="preserve">
     <value>Codes</value>
   </data>
+  <data name="ViewerNavigationBar.Content" xml:space="preserve">
+    <value>Viewer</value>
+  </data>
+  <data name="ViewerNavigationBar.Subtitle" xml:space="preserve">
+    <value>Bei Ändern der Sprache bitte Rechnung neuladen um Feldnamen zu aktualisieren</value>
+  </data>
 </root>

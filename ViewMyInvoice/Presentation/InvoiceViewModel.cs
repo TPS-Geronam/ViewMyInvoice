@@ -44,10 +44,10 @@ public partial record InvoiceViewModel
 
     public async Task SaveDocument()
     {
-        (var doc, var _) = _xPathService.State;
+        var (doc, docName, _) = _xPathService.State;
         if (doc == null)
             throw new NullReferenceException("InvoiceViewModel.SaveDocument: received null document from IXPathService");
-        await _documentService.SaveDocument(doc);
+        await _documentService.SaveDocument(doc, docName);
     }
 
     private IEnumerable<InvoiceFieldGroup> CreateFieldViews(IEnumerable<InvoiceField> mappings) => mappings

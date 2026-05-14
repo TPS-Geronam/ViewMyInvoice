@@ -23,14 +23,16 @@ internal class XPathService : IXPathService
     private XmlNamespaceManager? _namespaceManager;
 
     private XmlDocument? _document;
-    
-    public (XmlDocument? document, XmlNamespaceManager? nsManager) State
-        => (_document, _namespaceManager);
+    private string? _documentName;
 
-    public void RegisterDocument(XmlDocument document)
+    public (XmlDocument? document, string? documentName, XmlNamespaceManager? nsManager) State
+        => (_document, _documentName, _namespaceManager);
+
+    public void RegisterDocument(XmlDocument document, string documentName = "invoice.xml")
     {
         _xPathCache.Clear();
         _document = document;
+        _documentName = documentName;
         _namespaceManager = GetNamespaceManager(document);
     }
 

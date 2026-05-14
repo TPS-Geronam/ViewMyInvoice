@@ -4,8 +4,8 @@ namespace ViewMyInvoice.Services;
 
 public interface IXPathService
 {
-    (XmlDocument? document, XmlNamespaceManager? nsManager) State { get; }
-    void RegisterDocument(XmlDocument document);
+    (XmlDocument? document, string? documentName, XmlNamespaceManager? nsManager) State { get; }
+    void RegisterDocument(XmlDocument document, string documentName);
     XmlNode? Select(InvoiceField mapping);
     XmlNode RegisterElement(InvoiceField mapping);
 }

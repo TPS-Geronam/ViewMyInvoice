@@ -4,6 +4,6 @@ namespace ViewMyInvoice.Services;
 
 public interface IDocumentService
 {
-    Task<XmlDocument?> OpenDocument();
-    Task SaveDocument(XmlDocument document);
+    Task<(XmlDocument doc, string docName)?> OpenDocument();
+    Task SaveDocument(XmlDocument document, string? suggestedFileName);
 }

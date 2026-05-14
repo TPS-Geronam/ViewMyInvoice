@@ -11,56 +11,115 @@
     xmlns:utu="using:Uno.Toolkit.UI"
     xmlns:viewmodels="using:ViewMyInvoice.Presentation"
     Background="{ThemeResource BackgroundBrush}">
-    <Grid utu:SafeArea.Insets="VisibleBounds">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <utu:NavigationBar Grid.Row="0" Content="Viewer" />
-
-        <Button
-            Grid.Row="0"
-            HorizontalAlignment="Right"
-            VerticalAlignment="Center"
-            AutomationProperties.AutomationId="ChangeLanguageButton"
-            Command="{Binding ToggleLocalization}"
-            Content="{Binding CurrentCulture.NativeName}" />
-
-        <GridView Grid.Row="1" ItemsSource="{Binding GroupedFields}">
-            <GridView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Margin="10" Orientation="Horizontal">
-                        <TextBlock FontWeight="Bold" Text="{Binding GroupName, Converter={StaticResource LocalizeConverter}}" />
-
-                        <ItemsControl ItemsSource="{Binding Fields}">
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <StackPanel Orientation="Horizontal">
-                                        <TextBlock
-                                            Width="100"
-                                            VerticalAlignment="Center"
-                                            Text="{Binding FieldInfo.FieldKey, Converter={StaticResource LocalizeConverter}}" />
-                                        <TextBox Width="200" Text="{Binding Value, Mode=TwoWay}" />
-                                    </StackPanel>
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
-                    </StackPanel>
-                </DataTemplate>
-            </GridView.ItemTemplate>
-        </GridView>
-
-        <Button
-            x:Uid="SaveDocumentButton"
-            Grid.Row="2"
-            HorizontalAlignment="Right"
-            VerticalAlignment="Bottom"
-            AutomationProperties.AutomationId="SaveDocumentButton"
-            Command="{Binding SaveDocument}" />
-    </Grid>
-
     <Page.Resources>
         <viewmodels:LocalizeConverter x:Key="LocalizeConverter" />
     </Page.Resources>
+
+    <Grid Padding="20" utu:SafeArea.Insets="VisibleBounds">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0">
+            <Grid Padding="20" utu:SafeArea.Insets="VisibleBounds">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <!--  Header  -->
+                <Grid
+                    Grid.Row="0"
+                    Padding="15,0,15,10"
+                    utu:SafeArea.Insets="VisibleBounds">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <utu:NavigationBar
+                        x:Uid="ViewerNavigationBar"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Background="Transparent" />
+
+                    <Button
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        AutomationProperties.AutomationId="ChangeLanguageButton"
+                        Command="{Binding ToggleLocalization}"
+                        Content="{Binding CurrentCulture.NativeName}" />
+                </Grid>
+
+                <!--  Main Content  -->
+                <ItemsControl Grid.Row="1" ItemsSource="{Binding GroupedFields}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <!--  Group Card  -->
+                            <Border
+                                Margin="0,0,0,18"
+                                Padding="20"
+                                Background="{ThemeResource CardBackgroundFillColorDefaultBrush}"
+                                CornerRadius="16">
+
+                                <StackPanel Spacing="16">
+                                    <TextBlock
+                                        FontSize="20"
+                                        FontWeight="SemiBold"
+                                        Text="{Binding GroupName, Converter={StaticResource LocalizeConverter}}" />
+
+                                    <!--  Fields  -->
+                                    <ItemsControl ItemsSource="{Binding Fields}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid Margin="0,0,0,12">
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="220" />
+                                                        <ColumnDefinition Width="*" />
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <TextBlock
+                                                        Grid.Column="0"
+                                                        Margin="0,0,16,0"
+                                                        VerticalAlignment="Center"
+                                                        FontWeight="SemiBold"
+                                                        Opacity="0.85"
+                                                        Text="{Binding FieldInfo.FieldKey, Converter={StaticResource LocalizeConverter}, ConverterParameter=BTKey}"
+                                                        TextWrapping="Wrap" />
+
+                                                    <!--  User Input  -->
+                                                    <TextBox
+                                                        Grid.Column="1"
+                                                        MinWidth="220"
+                                                        Padding="12,8"
+                                                        HorizontalAlignment="Stretch"
+                                                        Text="{Binding Value, Mode=TwoWay}" />
+                                                </Grid>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </Grid>
+        </ScrollViewer>
+
+        <!--  Footer  -->
+        <Button
+            x:Uid="SaveDocumentButton"
+            Grid.Row="1"
+            Margin="0,10,0,0"
+            Padding="24,12"
+            HorizontalAlignment="Right"
+            AutomationProperties.AutomationId="SaveDocumentButton"
+            Command="{Binding SaveDocument}" />
+    </Grid>
 </Page>

@@ -1,4 +1,4 @@
-﻿namespace ViewMyInvoice.Presentation;
+namespace ViewMyInvoice.Presentation;
 
 public sealed partial class MainPage : Page
 {

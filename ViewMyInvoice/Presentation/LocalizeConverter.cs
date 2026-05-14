@@ -10,7 +10,13 @@ public record LocalizeConverter : IValueConverter
     {
         if (value is not string key || string.IsNullOrEmpty(key))
             return value;
-        return _localizer[key];
+
+        var localized = _localizer[key].ToString();
+
+        if ((string)parameter == "BTKey")
+            localized = $"{localized} ({value})";
+        
+        return localized;
     }
 
     public object ConvertBack(object value, Type targetType, object parameter, string language)

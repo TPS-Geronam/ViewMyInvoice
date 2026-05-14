@@ -6,7 +6,7 @@ namespace ViewMyInvoice.Services;
 
 internal record DocumentService : IDocumentService
 {
-    private const string SAVE_FILENAME = "edited_invoice.xml";
+    private const string DEFAULT_SAVE_FILENAME = "edited_invoice.xml";
 
     private readonly ILogger<DocumentService> _logger;
 
@@ -17,7 +17,6 @@ internal record DocumentService : IDocumentService
     private readonly FileSavePicker _fileSavePicker = new()
     {
         SuggestedStartLocation = PickerLocationId.DocumentsLibrary,
-        SuggestedFileName = SAVE_FILENAME,
     };
 
     private readonly IEnumerable<string> _fileOpenPickerTypes = [ ".xml" ];
@@ -35,8 +34,10 @@ internal record DocumentService : IDocumentService
         _fileOpenPickerTypes.ForEach((_, t) => _fileOpenPicker.FileTypeFilter.Add(t));
     }
 
-    public async Task SaveDocument(XmlDocument document)
+    public async Task SaveDocument(XmlDocument document, string? suggestedFileName)
     {
+        _fileSavePicker.SuggestedFileName = string.IsNullOrEmpty(suggestedFileName)
+            ? DEFAULT_SAVE_FILENAME : $"edited_{suggestedFileName}";
         var saveFile = await _fileSavePicker.PickSaveFileAsync();
         if (saveFile == null) return;
         CachedFileManager.DeferUpdates(saveFile);
@@ -45,13 +46,16 @@ internal record DocumentService : IDocumentService
         await CachedFileManager.CompleteUpdatesAsync(saveFile);
     }
 
-    public async Task<XmlDocument?> OpenDocument()
+    public async Task<(XmlDocument doc, string docName)?> OpenDocument()
     {
         var pickedFile = await _fileOpenPicker.PickSingleFileAsync();
         if (pickedFile == null) return default;
 
         var text = await FileIO.ReadTextAsync(pickedFile);
-        try { return LoadXml(text); }
+        try
+        {
+            return (LoadXml(text), pickedFile.Name);
+        }
         catch (Exception ex)
         {
             _logger.LogErrorMessage(ex.Message);

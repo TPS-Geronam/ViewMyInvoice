@@ -13,14 +13,14 @@ public partial record MainModel(
 
     public async Task OpenDocument()
     {
-        var xml = await DocumentService.OpenDocument()
+        var (doc, docName) = await DocumentService.OpenDocument()
             ?? throw new NullReferenceException("MainModel.GoToViewer: received null document from DocumentService");
-        await GoToViewer(xml);
+        await GoToViewer(doc, docName);
     }
 
-    private async Task GoToViewer(XmlDocument xml)
+    private async Task GoToViewer(XmlDocument doc, string docName)
     {
-        XPathService.RegisterDocument(xml);
-        await Navigator.NavigateViewModelAsync<InvoiceViewModel>(this, data: xml);
+        XPathService.RegisterDocument(doc, docName);
+        await Navigator.NavigateViewModelAsync<InvoiceViewModel>(this, data: doc);
     }
 }
