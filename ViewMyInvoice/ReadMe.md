@@ -1,8 +1,7 @@
 # TODO
 
-- more fields
-- localization
+- xaml:
+  - document drop area
+  - prettify main view
 - tests
-- document drop area
-- zugferd support
-    - extract factur-x.xml
+- setting: display bt numbers, or labels

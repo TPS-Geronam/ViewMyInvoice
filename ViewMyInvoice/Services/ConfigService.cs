@@ -12,7 +12,7 @@ internal record ConfigService(ILogger<ConfigService> Logger, IConfiguration Conf
 
 
     //private const string RESOURCES_LOCATION = "ms-appx:///Assets/Resources/";
-    //public async Task<InvoiceFieldConfig> ConfigAsync()
+    //public async Task<InvoiceFieldConfig?> ConfigAsync()
     //    => await LoadConfig($"{RESOURCES_LOCATION}/invoice_field_config.json");
 
     //private async Task<InvoiceFieldConfig?> LoadConfig(string fileName)

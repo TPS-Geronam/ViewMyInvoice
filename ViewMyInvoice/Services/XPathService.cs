@@ -51,6 +51,40 @@ internal class XPathService : IXPathService
         return node;
     }
 
+    public XmlNode RegisterElement(InvoiceField mapping)
+    {
+        if (_document == null || _namespaceManager == null)
+            throw new NullReferenceException("XPathService.RegisterElement: no document loaded");
+
+        var node = GetOrCreateNodeAtXPath(_document, mapping.FieldQuery)
+            ?? throw new NullReferenceException($"XPathService.RegisterElement: query doesn't match");
+
+        _xPathCache[mapping] = node;
+        return node;
+    }
+
+    private XmlNode? GetOrCreateNodeAtXPath(XmlDocument doc, string query)
+    {
+        var node = doc.SelectSingleNode(query, _namespaceManager!);
+        if (node != null)
+            return node;
+
+        var slashIndex = query.LastIndexOf('/');
+        if (slashIndex == -1)
+            return null;
+        
+        var newKey = query[..slashIndex];
+        var newNodeName = query[(slashIndex + 1)..];
+        var parentNode = GetOrCreateNodeAtXPath(doc, newKey);
+        if (parentNode == null)
+            return null;
+
+        var childNode = doc.CreateElement(newNodeName, parentNode.NamespaceURI);
+
+        parentNode.AppendChild(childNode);
+        return childNode;
+    }
+
     private XmlNamespaceManager GetNamespaceManager(XmlDocument document)
     {
         var ns = new XmlNamespaceManager(document.NameTable);

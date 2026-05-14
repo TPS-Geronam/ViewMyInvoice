@@ -117,389 +117,539 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BT-10" xml:space="preserve">
+    <value>Leitweg-ID</value>
+  </data>
+  <data name="BT-44" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="BT-50" xml:space="preserve">
+    <value>Straße / Haus-Nr.</value>
+  </data>
+  <data name="BT-51" xml:space="preserve">
+    <value>Postfach</value>
+  </data>
+  <data name="BT-163" xml:space="preserve">
+    <value>Adresszusatz</value>
+  </data>
+  <data name="BT-53" xml:space="preserve">
+    <value>PLZ</value>
+  </data>
+  <data name="BT-52" xml:space="preserve">
+    <value>Ort</value>
+  </data>
+  <data name="BT-54" xml:space="preserve">
+    <value>Bundesland</value>
+  </data>
+  <data name="BT-55" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="BT-46" xml:space="preserve">
+    <value>Kennung / Kunden-Nr.</value>
+  </data>
+  <data name="BT-46-scheme-id" xml:space="preserve">
+    <value>Schema der Kennung</value>
+  </data>
+  <data name="BT-56" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="BT-57" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="BT-58" xml:space="preserve">
+    <value>E-Mail-Adresse</value>
+  </data>
+  <data name="BT-27" xml:space="preserve">
+    <value>Firmenname</value>
+  </data>
+  <data name="BT-35" xml:space="preserve">
+    <value>Straße / Haus-Nr.</value>
+  </data>
+  <data name="BT-36" xml:space="preserve">
+    <value>Postfach</value>
+  </data>
+  <data name="BT-162" xml:space="preserve">
+    <value>Adresszusatz</value>
+  </data>
+  <data name="BT-38" xml:space="preserve">
+    <value>PLZ</value>
+  </data>
+  <data name="BT-37" xml:space="preserve">
+    <value>Ort</value>
+  </data>
+  <data name="BT-39" xml:space="preserve">
+    <value>Bundesland</value>
+  </data>
+  <data name="BT-40" xml:space="preserve">
+    <value>Ländercode</value>
+  </data>
+  <data name="BT-29" xml:space="preserve">
+    <value>Kennung</value>
+  </data>
+  <data name="BT-29-scheme-id" xml:space="preserve">
+    <value>Schema der Kennung</value>
+  </data>
+  <data name="BT-41" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="BT-42" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="BT-43" xml:space="preserve">
+    <value>E-Mail-Adresse</value>
+  </data>
   <data name="BT-1" xml:space="preserve">
     <value>Rechnungsnummer</value>
   </data>
   <data name="BT-2" xml:space="preserve">
-    <value>Datum der Rechnungserstellung</value>
-  </data>
-  <data name="BT-9" xml:space="preserve">
-    <value>Fälligkeitsdatum</value>
+    <value>Rechnungsdatum</value>
   </data>
   <data name="BT-3" xml:space="preserve">
     <value>Rechnungsart</value>
   </data>
-  <data name="BT-10" xml:space="preserve">
-    <value>Kaufbezug</value>
-  </data>
-  <data name="BT-13" xml:space="preserve">
-    <value>Kaufauftragsreferenz</value>
-  </data>
-  <data name="BT-14" xml:space="preserve">
-    <value>Verkaufsauftragsreferenz</value>
-  </data>
-  <data name="BT-17" xml:space="preserve">
-    <value>Bewerber- oder Losreferenz</value>
-  </data>
-  <data name="BT-18" xml:space="preserve">
-    <value>Identifikator des Rechnungsgegenstands</value>
-  </data>
-  <data name="BT-20" xml:space="preserve">
-    <value>Zahlungskonditionen</value>
+  <data name="BT-5" xml:space="preserve">
+    <value>Währung</value>
   </data>
   <data name="BT-73" xml:space="preserve">
-    <value>Beginn des Rechnungszeitraums</value>
-  </data>
-  <data name="BT-11" xml:space="preserve">
-    <value>Projektreferenz</value>
-  </data>
-  <data name="BT-12" xml:space="preserve">
-    <value>Kontraktreferenz</value>
+    <value>von</value>
   </data>
   <data name="BT-74" xml:space="preserve">
-    <value>Ende des Rechnungszeitraums</value>
+    <value>bis</value>
   </data>
-  <data name="BT-22" xml:space="preserve">
-    <value>Rechnungsnotiz</value>
+  <data name="BT-11" xml:space="preserve">
+    <value>Projektnummer</value>
   </data>
-  <data name="BT-27" xml:space="preserve">
-    <value>Name des Verkäufers</value>
+  <data name="BT-12" xml:space="preserve">
+    <value>Vertragsnummer</value>
   </data>
-  <data name="BT-28" xml:space="preserve">
-    <value>Geschäftsführungsname des Verkäufers</value>
+  <data name="BT-13" xml:space="preserve">
+    <value>Bestellnummer</value>
   </data>
-  <data name="BT-29" xml:space="preserve">
-    <value>Identifikationsnummer des Verkäufers</value>
-  </data>
-  <data name="BT-31" xml:space="preserve">
-    <value>Mehrwertsteueridentifikationsnummer des Verkäufers</value>
-  </data>
-  <data name="BT-32" xml:space="preserve">
-    <value>Steuerregistrierungsnummer des Verkäufers</value>
-  </data>
-  <data name="BT-33" xml:space="preserve">
-    <value>Zusätzliche rechtliche Informationen des Verkäufers</value>
-  </data>
-  <data name="BT-5" xml:space="preserve">
-    <value>Währungscode der Rechnung</value>
-  </data>
-  <data name="BT-21" xml:space="preserve">
-    <value>Kodierung des Themas der Rechnungsnotiz</value>
+  <data name="BT-14" xml:space="preserve">
+    <value>Auftragsnummer</value>
   </data>
   <data name="BT-25" xml:space="preserve">
-    <value>Referenznummer einer vorherigen Rechnung</value>
+    <value>Rechnungsnummer (vorausgeg. RE)</value>
   </data>
   <data name="BT-26" xml:space="preserve">
-    <value>Datum der Ausstellung einer vorherigen Rechnung</value>
-  </data>
-  <data name="BT-29-scheme-id" xml:space="preserve">
-    <value>Schematyp der Identifikationsnummer des Verkäufers</value>
-  </data>
-  <data name="BT-35" xml:space="preserve">
-    <value>Adresszeile 1 des Verkäufers</value>
-  </data>
-  <data name="BT-36" xml:space="preserve">
-    <value>Adresszeile 2 des Verkäufers</value>
-  </data>
-  <data name="BT-37" xml:space="preserve">
-    <value>Stadt des Verkäufers</value>
-  </data>
-  <data name="BT-38" xml:space="preserve">
-    <value>Postleitzahl des Verkäufers</value>
-  </data>
-  <data name="BT-39" xml:space="preserve">
-    <value>Kennung der Landesregion des Verkäufers</value>
-  </data>
-  <data name="BT-40" xml:space="preserve">
-    <value>Ländercode des Verkäufers</value>
-  </data>
-  <data name="BT-41" xml:space="preserve">
-    <value>Kontaktpunkt des Verkäufers</value>
-  </data>
-  <data name="BT-42" xml:space="preserve">
-    <value>Telefonnummer des Kontakts des Verkäufers</value>
-  </data>
-  <data name="BT-43" xml:space="preserve">
-    <value>E-Mail-Adresse des Kontakts des Verkäufers</value>
-  </data>
-  <data name="BT-44" xml:space="preserve">
-    <value>Name des Käufers</value>
-  </data>
-  <data name="BT-46" xml:space="preserve">
-    <value>Identifikationsnummer des Käufers</value>
-  </data>
-  <data name="BT-46-scheme-id" xml:space="preserve">
-    <value>Schematyp der Identifikationsnummer des Käufers</value>
-  </data>
-  <data name="BT-50" xml:space="preserve">
-    <value>Adresszeile 1 des Käufers</value>
-  </data>
-  <data name="BT-51" xml:space="preserve">
-    <value>Adresszeile 2 des Käufers</value>
-  </data>
-  <data name="BT-52" xml:space="preserve">
-    <value>Stadt des Käufers</value>
-  </data>
-  <data name="BT-53" xml:space="preserve">
-    <value>Postleitzahl des Käufers</value>
-  </data>
-  <data name="BT-54" xml:space="preserve">
-    <value>Kennung der Landesregion des Käufers</value>
-  </data>
-  <data name="BT-55" xml:space="preserve">
-    <value>Ländercode des Käufers</value>
-  </data>
-  <data name="BT-56" xml:space="preserve">
-    <value>Kontaktpunkt des Käufers</value>
-  </data>
-  <data name="BT-57" xml:space="preserve">
-    <value>Telefonnummer des Kontakts des Käufers</value>
-  </data>
-  <data name="BT-58" xml:space="preserve">
-    <value>E-Mail-Adresse des Kontakts des Käufers</value>
-  </data>
-  <data name="BT-81" xml:space="preserve">
-    <value>Kodierung des Zahlungsmittels</value>
-  </data>
-  <data name="BT-82" xml:space="preserve">
-    <value>Zahlungsmitteltext</value>
-  </data>
-  <data name="BT-83" xml:space="preserve">
-    <value>Überweisungsinformation</value>
-  </data>
-  <data name="BT-84" xml:space="preserve">
-    <value>Kontonummer des Zahlungskontos</value>
-  </data>
-  <data name="BT-85" xml:space="preserve">
-    <value>Name des Zahlungskontos</value>
-  </data>
-  <data name="BT-86" xml:space="preserve">
-    <value>Kennung der Zahlungsvermittlerinstitut</value>
-  </data>
-  <data name="BT-87" xml:space="preserve">
-    <value>Hauptkartenkontonummer der Kreditkarte</value>
-  </data>
-  <data name="BT-88" xml:space="preserve">
-    <value>Name des Inhabers der Kreditkarte</value>
-  </data>
-  <data name="BT-89" xml:space="preserve">
-    <value>Kennung der Einwilligungsermächtigung</value>
-  </data>
-  <data name="BT-90" xml:space="preserve">
-    <value>Bankverwaltete Kreditorenkennung</value>
-  </data>
-  <data name="BT-91" xml:space="preserve">
-    <value>Kontonummer des abgebuchten Kontos</value>
-  </data>
-  <data name="BT-92" xml:space="preserve">
-    <value>Erlassbetrag auf Dokumentebene</value>
-  </data>
-  <data name="BT-93" xml:space="preserve">
-    <value>Basiserlassbetrag auf Dokumentebene</value>
-  </data>
-  <data name="BT-94" xml:space="preserve">
-    <value>Erlassesatz auf Dokumentebene</value>
-  </data>
-  <data name="BT-95" xml:space="preserve">
-    <value>Kennung der Umsatzsteuerkategorie für Erlass auf Dokumentebene</value>
-  </data>
-  <data name="BT-96" xml:space="preserve">
-    <value>Umsatzsteuersatz für Erlass auf Dokumentebene</value>
-  </data>
-  <data name="BT-97" xml:space="preserve">
-    <value>Grund des Erlasses auf Dokumentebene</value>
-  </data>
-  <data name="BT-98" xml:space="preserve">
-    <value>Kennung des Grundes für den Erlass auf Dokumentebene</value>
-  </data>
-  <data name="BT-99" xml:space="preserve">
-    <value>Guthabenbetrag auf Dokumentebene</value>
-  </data>
-  <data name="BT-100" xml:space="preserve">
-    <value>Basisguthabenbetrag auf Dokumentebene</value>
-  </data>
-  <data name="BT-101" xml:space="preserve">
-    <value>Guthabensatz auf Dokumentebene</value>
-  </data>
-  <data name="BT-102" xml:space="preserve">
-    <value>Umsatzsteuer-Kategorieschlüssel auf Dokumentebene</value>
-  </data>
-  <data name="BT-103" xml:space="preserve">
-    <value>Umsatzsteuersatz der Gebühr auf Dokumentebene</value>
-  </data>
-  <data name="BT-104" xml:space="preserve">
-    <value>Grund für die Gebühr auf Dokumentebene</value>
-  </data>
-  <data name="BT-105" xml:space="preserve">
-    <value>Grundschlüssel der Gebühr auf Dokumentebene</value>
+    <value>Rechnungsdatum (vorausgeg. RE)</value>
   </data>
   <data name="BT-106" xml:space="preserve">
-    <value>Summe der Netto-Betrag pro Rechnungszeile</value>
+    <value>Summe aller Positionen (netto)</value>
   </data>
   <data name="BT-107" xml:space="preserve">
-    <value>Summe der Nachlässe auf Dokumentebene</value>
+    <value>Summe aller Nachlässe (netto)</value>
   </data>
   <data name="BT-108" xml:space="preserve">
-    <value>Summe der Gebühren auf Dokumentebene</value>
+    <value>Summe aller Zuschläge (netto)</value>
   </data>
   <data name="BT-109" xml:space="preserve">
-    <value>Gesamtbetrag ohne Umsatzsteuer</value>
+    <value>Gesamtsumme (netto)</value>
   </data>
   <data name="BT-110" xml:space="preserve">
-    <value>Gesamtumsatzsteuerbetrag</value>
+    <value>Summe Umsatzsteuer</value>
   </data>
   <data name="BT-111" xml:space="preserve">
-    <value>Gesamtumsatzsteuerbetrag in Buchungswährung</value>
+    <value>Summe Umsatzsteuer in Abrechnungswährung</value>
   </data>
   <data name="BT-112" xml:space="preserve">
-    <value>Gesamtbetrag mit Umsatzsteuer</value>
+    <value>Gesamtsumme (brutto)</value>
   </data>
   <data name="BT-113" xml:space="preserve">
-    <value>Bezahlter Betrag</value>
+    <value>Gezahlter Betrag (brutto)</value>
   </data>
   <data name="BT-114" xml:space="preserve">
-    <value>Rundungsbetrag</value>
+    <value>Rundungsbetrag (brutto)</value>
   </data>
   <data name="BT-115" xml:space="preserve">
-    <value>Zu zahlender Betrag</value>
-  </data>
-  <data name="BT-116" xml:space="preserve">
-    <value>Steuerpflichtiger Betrag der Umsatzsteuer-Kategorie</value>
-  </data>
-  <data name="BT-117" xml:space="preserve">
-    <value>Umsatzsteuerbetrag der Kategorie</value>
+    <value>Fälliger Betrag (brutto)</value>
   </data>
   <data name="BT-118" xml:space="preserve">
-    <value>Umsatzsteuer-Kategorieschlüssel</value>
+    <value>Umsatzsteuerkategorie</value>
+  </data>
+  <data name="BT-116" xml:space="preserve">
+    <value>Gesamtsumme (netto)</value>
   </data>
   <data name="BT-119" xml:space="preserve">
-    <value>Umsatzsteuersatz der Kategorie</value>
+    <value>Umsatzsteuersatz</value>
+  </data>
+  <data name="BT-117" xml:space="preserve">
+    <value>Umsatzsteuerbetrag</value>
   </data>
   <data name="BT-120" xml:space="preserve">
-    <value>Text für die Befreiungsgrundlage von der Umsatzsteuer</value>
+    <value>Befreiungsgrund</value>
   </data>
   <data name="BT-121" xml:space="preserve">
-    <value>Befreiungsgrundschlüssel von der Umsatzsteuer</value>
+    <value>Kennung für den Befreiungsgrund</value>
+  </data>
+  <data name="BT-95" xml:space="preserve">
+    <value>Umsatzsteuerkategorie des Nachlasses</value>
+  </data>
+  <data name="BT-93" xml:space="preserve">
+    <value>Grundbetrag (netto)</value>
+  </data>
+  <data name="BT-94" xml:space="preserve">
+    <value>Prozentsatz</value>
+  </data>
+  <data name="BT-92" xml:space="preserve">
+    <value>Nachlass (netto)</value>
+  </data>
+  <data name="BT-96" xml:space="preserve">
+    <value>Umsatzsteuersatz des Nachlasses</value>
+  </data>
+  <data name="BT-97" xml:space="preserve">
+    <value>Grund für den Nachlass</value>
+  </data>
+  <data name="BT-98" xml:space="preserve">
+    <value>Document level allowance reason code</value>
+  </data>
+  <data name="BT-102" xml:space="preserve">
+    <value>Umsatzsteuerkategorie des Zuschlages</value>
+  </data>
+  <data name="BT-100" xml:space="preserve">
+    <value>Grundbetrag (netto)</value>
+  </data>
+  <data name="BT-101" xml:space="preserve">
+    <value>Prozentsatz</value>
+  </data>
+  <data name="BT-99" xml:space="preserve">
+    <value>Zuschlag (netto)</value>
+  </data>
+  <data name="BT-103" xml:space="preserve">
+    <value>Umsatzsteuersatz des Zuschlages</value>
+  </data>
+  <data name="BT-104" xml:space="preserve">
+    <value>Grund für den Zuschlage</value>
+  </data>
+  <data name="BT-105" xml:space="preserve">
+    <value>Document level charge reason code</value>
+  </data>
+  <data name="BT-20" xml:space="preserve">
+    <value>Skonto</value>
+  </data>
+  <data name="BT-9" xml:space="preserve">
+    <value>Fälligkeitsdatum</value>
+  </data>
+  <data name="BT-81" xml:space="preserve">
+    <value>Code für das Zahlungsmittel</value>
+  </data>
+  <data name="BT-82" xml:space="preserve">
+    <value>Zahlungsmittel</value>
+  </data>
+  <data name="BT-83" xml:space="preserve">
+    <value>Verwendungszweck</value>
+  </data>
+  <data name="BT-87" xml:space="preserve">
+    <value>Kartennummer</value>
+  </data>
+  <data name="BT-88" xml:space="preserve">
+    <value>Karteninhaber</value>
+  </data>
+  <data name="BT-89" xml:space="preserve">
+    <value>Mandatsreferenznr.</value>
+  </data>
+  <data name="BT-91" xml:space="preserve">
+    <value>IBAN</value>
+  </data>
+  <data name="BT-90" xml:space="preserve">
+    <value>Gläubiger-ID</value>
+  </data>
+  <data name="BT-85" xml:space="preserve">
+    <value>Kontoinhaber</value>
+  </data>
+  <data name="BT-84" xml:space="preserve">
+    <value>IBAN</value>
+  </data>
+  <data name="BT-86" xml:space="preserve">
+    <value>BIC</value>
+  </data>
+  <data name="BT-21" xml:space="preserve">
+    <value>Betreff</value>
+  </data>
+  <data name="BT-22" xml:space="preserve">
+    <value>Bemerkung</value>
   </data>
   <data name="BT-126" xml:space="preserve">
-    <value>Bezeichnung der Rechnungslinie</value>
+    <value>Bemerkung</value>
   </data>
   <data name="BT-127" xml:space="preserve">
-    <value>Hinweis zur Rechnungslinie</value>
+    <value>Freitext</value>
   </data>
   <data name="BT-128" xml:space="preserve">
-    <value>Objektbezeichnung der Rechnungslinie</value>
+    <value>Objektkennung</value>
   </data>
   <data name="BT-128-scheme-id" xml:space="preserve">
-    <value>Schablone für die Objektbezeichnung der Rechnungslinie</value>
-  </data>
-  <data name="BT-129" xml:space="preserve">
-    <value>Rechnungsquantität</value>
-  </data>
-  <data name="BT-130" xml:space="preserve">
-    <value>Maßeinheit der Rechnungsquantität</value>
-  </data>
-  <data name="BT-131" xml:space="preserve">
-    <value>Netto-Rechnungsbetrag</value>
+    <value>Schema der Objektkennung</value>
   </data>
   <data name="BT-132" xml:space="preserve">
-    <value>Referenz auf die Bestellposition</value>
+    <value>Nummer der Auftragsposition</value>
   </data>
   <data name="BT-133" xml:space="preserve">
-    <value>Buchungsschlüssel des Käufers für Rechnungslinie</value>
+    <value>Kontierungshinweis /Kostenstelle</value>
   </data>
   <data name="BT-134" xml:space="preserve">
-    <value>Startdatum des Zeitraums der Rechnungslinie</value>
+    <value>von</value>
   </data>
   <data name="BT-135" xml:space="preserve">
-    <value>Enddatum des Zeitraums der Rechnungslinie</value>
+    <value>bis</value>
   </data>
-  <data name="BT-136" xml:space="preserve">
-    <value>Nachlassbetrag in der Rechnungslinie</value>
+  <data name="BT-129" xml:space="preserve">
+    <value>Menge</value>
   </data>
-  <data name="BT-137" xml:space="preserve">
-    <value>Basis-Nachlassbetrag der Rechnungslinie</value>
-  </data>
-  <data name="BT-138" xml:space="preserve">
-    <value>Nachlassprozentsatz der Rechnungslinie</value>
-  </data>
-  <data name="BT-139" xml:space="preserve">
-    <value>Grund für den Nachlass in der Rechnungslinie</value>
-  </data>
-  <data name="BT-140" xml:space="preserve">
-    <value>Nachlassgrundcode der Rechnungslinie</value>
-  </data>
-  <data name="BT-141" xml:space="preserve">
-    <value>Zuschlagsbetrag in der Rechnungslinie</value>
-  </data>
-  <data name="BT-142" xml:space="preserve">
-    <value>Basis-Zuschlagsbetrag der Rechnungslinie</value>
-  </data>
-  <data name="BT-143" xml:space="preserve">
-    <value>Zuschlagesatz der Rechnungslinie</value>
-  </data>
-  <data name="BT-144" xml:space="preserve">
-    <value>Grund für den Zuschlag in der Rechnungslinie</value>
-  </data>
-  <data name="BT-145" xml:space="preserve">
-    <value>Zuschlagsgrundcode der Rechnungslinie</value>
+  <data name="BT-130" xml:space="preserve">
+    <value>Einheit</value>
   </data>
   <data name="BT-146" xml:space="preserve">
-    <value>Nettopreis des Artikels</value>
+    <value>Preis pro Einheit (netto)</value>
+  </data>
+  <data name="BT-131" xml:space="preserve">
+    <value>Gesamtpreis (netto)</value>
   </data>
   <data name="BT-147" xml:space="preserve">
-    <value>Artikelrabatt</value>
+    <value>Rabatt (netto)</value>
   </data>
   <data name="BT-148" xml:space="preserve">
-    <value>Großhandelspreis des Artikels</value>
+    <value>Listenpreis (netto)</value>
   </data>
   <data name="BT-149" xml:space="preserve">
-    <value>Basismenge des Preises für den Artikel</value>
+    <value>Anzahl der Einheit</value>
   </data>
   <data name="BT-150" xml:space="preserve">
-    <value>Einheit der Basismenge für den Preis des Artikels</value>
+    <value>Code der Maßeinheit</value>
   </data>
   <data name="BT-151" xml:space="preserve">
-    <value>Umsatzsteuerkategoriecode für den Artikel</value>
+    <value>Umsatzsteuer</value>
   </data>
   <data name="BT-152" xml:space="preserve">
-    <value>Umsatzsteuersatz des Artikels</value>
+    <value>Umsatzsteuersatz in %</value>
+  </data>
+  <data name="BT-137" xml:space="preserve">
+    <value>Grundbetrag (netto)</value>
+  </data>
+  <data name="BT-138" xml:space="preserve">
+    <value>Prozentsatz</value>
+  </data>
+  <data name="BT-136" xml:space="preserve">
+    <value>Nachlass</value>
+  </data>
+  <data name="BT-139" xml:space="preserve">
+    <value>Grund des Nachlasses</value>
+  </data>
+  <data name="BT-140" xml:space="preserve">
+    <value>Code für den Nachlassgrund</value>
+  </data>
+  <data name="BT-142" xml:space="preserve">
+    <value>Grundbetrag (netto)</value>
+  </data>
+  <data name="BT-143" xml:space="preserve">
+    <value>Prozentsatz</value>
+  </data>
+  <data name="BT-141" xml:space="preserve">
+    <value>Zuschlag</value>
+  </data>
+  <data name="BT-144" xml:space="preserve">
+    <value>Grund des Zuschlags</value>
+  </data>
+  <data name="BT-145" xml:space="preserve">
+    <value>Code für den Zuschlagsgrund</value>
   </data>
   <data name="BT-153" xml:space="preserve">
-    <value>Artikelname</value>
+    <value>Bezeichnung</value>
   </data>
   <data name="BT-154" xml:space="preserve">
-    <value>Artikelbeschreibung</value>
+    <value>Beschreibung</value>
   </data>
   <data name="BT-155" xml:space="preserve">
-    <value>Kennung des Artikels vom Verkäufer</value>
+    <value>Artikelnummer</value>
   </data>
   <data name="BT-156" xml:space="preserve">
-    <value>Kennung des Artikels vom Käufer</value>
-  </data>
-  <data name="BT-157" xml:space="preserve">
-    <value>Standardkennung für den Artikel</value>
-  </data>
-  <data name="BT-157-scheme-id" xml:space="preserve">
-    <value>Schemakennung der Standardkennung des Artikels</value>
-  </data>
-  <data name="BT-158" xml:space="preserve">
-    <value>Identifikationsnummer der Artikelklassifizierung</value>
-  </data>
-  <data name="BT-158-scheme-id" xml:space="preserve">
-    <value>Schemakennung der Artikelklassifizierung</value>
+    <value>Kunden-Material-Nr.</value>
   </data>
   <data name="BT-160" xml:space="preserve">
-    <value>Name des Artikeleigenschaftsattributs</value>
+    <value>Color</value>
   </data>
   <data name="BT-161" xml:space="preserve">
-    <value>Wert des Artikeleigenschaftsattributs</value>
+    <value>Color</value>
   </data>
-  <data name="BT-162" xml:space="preserve">
-    <value>Adresse des Verkäufers (Zeile 3)</value>
+  <data name="BT-157" xml:space="preserve">
+    <value>Artikelkennung (EAN)</value>
   </data>
-  <data name="BT-163" xml:space="preserve">
-    <value>Adresse des Käufers (Zeile 3)</value>
+  <data name="BT-157-scheme-id" xml:space="preserve">
+    <value>Schema der Artikelkennung</value>
+  </data>
+  <data name="BT-158" xml:space="preserve">
+    <value>Code der Artikelklassifizierung</value>
+  </data>
+  <data name="BT-158-scheme-id" xml:space="preserve">
+    <value>Kennung zur Bildung des Schemas</value>
+  </data>
+  <data name="BT-158-scheme-version-id" xml:space="preserve">
+    <value>Version zur Bildung des Schemas</value>
+  </data>
+  <data name="BT-159" xml:space="preserve">
+    <value>Code des Herkunftslandes</value>
+  </data>
+  <data name="BT-28" xml:space="preserve">
+    <value>Abweichender Handelsname</value>
+  </data>
+  <data name="BT-34" xml:space="preserve">
+    <value>Elektronische Adresse</value>
+  </data>
+  <data name="BT-34-scheme-id" xml:space="preserve">
+    <value>Schema der elektronischen Adresse</value>
+  </data>
+  <data name="BT-30" xml:space="preserve">
+    <value>Register-/Registriernummer</value>
+  </data>
+  <data name="BT-31" xml:space="preserve">
+    <value>Umsatzsteuer-ID</value>
+  </data>
+  <data name="BT-32" xml:space="preserve">
+    <value>Steuernummer</value>
+  </data>
+  <data name="BT-32-scheme" xml:space="preserve">
+    <value>Schema der Steuernummer</value>
+  </data>
+  <data name="BT-33" xml:space="preserve">
+    <value>Weitere rechtliche Informationen</value>
+  </data>
+  <data name="BT-6" xml:space="preserve">
+    <value>Code der Umsatzsteuerwährung</value>
+  </data>
+  <data name="BT-62" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="BT-64" xml:space="preserve">
+    <value>Straße / Hausnummer</value>
+  </data>
+  <data name="BT-65" xml:space="preserve">
+    <value>Postfach</value>
+  </data>
+  <data name="BT-164" xml:space="preserve">
+    <value>Adresszusatz</value>
+  </data>
+  <data name="BT-67" xml:space="preserve">
+    <value>PLZ</value>
+  </data>
+  <data name="BT-66" xml:space="preserve">
+    <value>Ort</value>
+  </data>
+  <data name="BT-68" xml:space="preserve">
+    <value>Bundesland</value>
+  </data>
+  <data name="BT-69" xml:space="preserve">
+    <value>Ländercode</value>
+  </data>
+  <data name="BT-63" xml:space="preserve">
+    <value>Umsatzsteuer-ID</value>
+  </data>
+  <data name="BT-45" xml:space="preserve">
+    <value>Abweichender Handelsname</value>
+  </data>
+  <data name="BT-49" xml:space="preserve">
+    <value>Elektronische Adresse</value>
+  </data>
+  <data name="BT-49-scheme-id" xml:space="preserve">
+    <value>Schema der elektronischen Adresse</value>
+  </data>
+  <data name="BT-47" xml:space="preserve">
+    <value>Register-/Registriernummer</value>
+  </data>
+  <data name="BT-47-scheme-id" xml:space="preserve">
+    <value>Schema der Register-/Registriernummer</value>
+  </data>
+  <data name="BT-48" xml:space="preserve">
+    <value>Umsatzsteuer-ID</value>
+  </data>
+  <data name="BT-7" xml:space="preserve">
+    <value>Abrechnungsdatum der Umsatzsteuer</value>
+  </data>
+  <data name="BT-8" xml:space="preserve">
+    <value>Code des Umsatzsteuer-Abrechnungsdatums</value>
+  </data>
+  <data name="BT-19" xml:space="preserve">
+    <value>Kontierungsinformation / Kostenstelle</value>
+  </data>
+  <data name="BT-71" xml:space="preserve">
+    <value>Kennung des Lieferorts</value>
+  </data>
+  <data name="BT-71-scheme-id" xml:space="preserve">
+    <value>Schema der Kennung</value>
+  </data>
+  <data name="BT-72" xml:space="preserve">
+    <value>Lieferdatum</value>
+  </data>
+  <data name="BT-70" xml:space="preserve">
+    <value>Name des Empfängers</value>
+  </data>
+  <data name="BT-75" xml:space="preserve">
+    <value>Straße / Haus-Nr.</value>
+  </data>
+  <data name="BT-76" xml:space="preserve">
+    <value>Postfach</value>
+  </data>
+  <data name="BT-165" xml:space="preserve">
+    <value>Adresszusatz</value>
+  </data>
+  <data name="BT-78" xml:space="preserve">
+    <value>PLZ</value>
+  </data>
+  <data name="BT-77" xml:space="preserve">
+    <value>Ort</value>
+  </data>
+  <data name="BT-79" xml:space="preserve">
+    <value>Bundesland</value>
+  </data>
+  <data name="BT-80" xml:space="preserve">
+    <value>Land</value>
+  </data>
+  <data name="BT-17" xml:space="preserve">
+    <value>Vergabenummer</value>
+  </data>
+  <data name="BT-15" xml:space="preserve">
+    <value>Kennung der Empfangsbestätigung</value>
+  </data>
+  <data name="BT-16" xml:space="preserve">
+    <value>Kennung der Versandanzeige</value>
+  </data>
+  <data name="BT-23" xml:space="preserve">
+    <value>Prozesskennung</value>
+  </data>
+  <data name="BT-24" xml:space="preserve">
+    <value>Spezifikationskennung</value>
+  </data>
+  <data name="BT-18" xml:space="preserve">
+    <value>Objektkennung</value>
+  </data>
+  <data name="BT-18-scheme-id" xml:space="preserve">
+    <value>Schema der Objektkennung</value>
+  </data>
+  <data name="BT-59" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="BT-60" xml:space="preserve">
+    <value>Kennung</value>
+  </data>
+  <data name="BT-60-scheme-id" xml:space="preserve">
+    <value>Schema der Kennung</value>
+  </data>
+  <data name="BT-61" xml:space="preserve">
+    <value>Register-/Registriernummer</value>
+  </data>
+  <data name="BT-61-scheme-id" xml:space="preserve">
+    <value>Schema der Register-/Registriernummer</value>
+  </data>
+  <data name="BT-122" xml:space="preserve">
+    <value>Kennung</value>
+  </data>
+  <data name="BT-123" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+  <data name="BT-124" xml:space="preserve">
+    <value>Verweis (z.B. Internetadresse)</value>
+  </data>
+  <data name="BT-125" xml:space="preserve">
+    <value>Name des Anhangsdokuments</value>
   </data>
   <data name="OpenDocumentButton.Content" xml:space="preserve">
     <value>Rechnung öffnen</value>
@@ -509,5 +659,56 @@
   </data>
   <data name="ApplicationName" xml:space="preserve">
     <value>EN16931 CII Rechnungseditor</value>
+  </data>
+  <data name="buyer_information" xml:space="preserve">
+    <value>Käufer</value>
+  </data>
+  <data name="seller_information" xml:space="preserve">
+    <value>Verkäufer</value>
+  </data>
+  <data name="invoice_header" xml:space="preserve">
+    <value>Rechnung</value>
+  </data>
+  <data name="document_period" xml:space="preserve">
+    <value>Datumangaben</value>
+  </data>
+  <data name="document_references" xml:space="preserve">
+    <value>Referenzen</value>
+  </data>
+  <data name="invoice_line" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="allowance_charge" xml:space="preserve">
+    <value>Zuschuss</value>
+  </data>
+  <data name="vat_information" xml:space="preserve">
+    <value>MwSt</value>
+  </data>
+  <data name="invoice_totals" xml:space="preserve">
+    <value>Gesamt</value>
+  </data>
+  <data name="payment_information" xml:space="preserve">
+    <value>Bezahlung</value>
+  </data>
+  <data name="general" xml:space="preserve">
+    <value>Allgemein</value>
+  </data>
+  <data name="identifiers" xml:space="preserve">
+    <value>IDs</value>
+  </data>
+  <data name="invoice_line_item" xml:space="preserve">
+    <value>Position (Artikel)</value>
+  </data>
+  <data name="tax_information" xml:space="preserve">
+    <value>Steuer</value>
+  </data>
+  <data name="delivery_information" xml:space="preserve">
+    <value>Zustellung</value>
+  </data>
+  <data name="address_information" xml:space="preserve">
+    <value>Adresse</value>
+  </data>
+  <data name="code_lists" xml:space="preserve">
+    <value>Codes</value>
   </data>
 </root>

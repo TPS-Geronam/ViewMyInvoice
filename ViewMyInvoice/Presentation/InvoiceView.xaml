@@ -15,7 +15,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <utu:NavigationBar Grid.Row="0" Content="Viewer" />
 
@@ -31,7 +31,7 @@
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Margin="10" Orientation="Horizontal">
-                        <TextBlock FontWeight="Bold" Text="{Binding GroupName}" />
+                        <TextBlock FontWeight="Bold" Text="{Binding GroupName, Converter={StaticResource LocalizeConverter}}" />
 
                         <ItemsControl ItemsSource="{Binding Fields}">
                             <ItemsControl.ItemTemplate>
