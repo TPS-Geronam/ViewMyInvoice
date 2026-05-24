@@ -19,7 +19,7 @@ jobs:
     name: Smoke Test (Debug Build of ViewMyInvoice)
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
@@ -29,7 +29,7 @@ jobs:
 
       # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
       - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v1.3.1
+        uses: microsoft/setup-msbuild@v3
 
       - name: Build ViewMyInvoice (Debug)
         shell: pwsh
@@ -39,7 +39,7 @@ jobs:
     name: Unit Tests
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
@@ -49,7 +49,7 @@ jobs:
 
       # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
       - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v1.3.1
+        uses: microsoft/setup-msbuild@v3
 
       - name: Build ViewMyInvoice.Tests (Release)
         shell: pwsh
