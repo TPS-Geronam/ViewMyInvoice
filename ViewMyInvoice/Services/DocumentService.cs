@@ -4,7 +4,7 @@ using Windows.Storage.Pickers;
 
 namespace ViewMyInvoice.Services;
 
-internal record DocumentService : IDocumentService
+public record DocumentService : IDocumentService
 {
     private const string DEFAULT_SAVE_FILENAME = "edited_invoice.xml";
 

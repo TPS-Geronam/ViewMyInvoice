@@ -7,6 +7,7 @@ namespace ViewMyInvoice.Presentation;
 
 public partial record InvoiceViewModel
 {
+    private readonly ILogger<InvoiceViewModel> _logger;
     private readonly ILocalizationService _localizationService;
     private readonly IConfigService _configService;
     private readonly IXPathService _xPathService;
@@ -17,11 +18,13 @@ public partial record InvoiceViewModel
         .Value(this, () => _localizationService.CurrentCulture);
 
     public InvoiceViewModel(
+        ILogger<InvoiceViewModel> logger,
         ILocalizationService localizationService,
         IConfigService configService,
         IXPathService xPathService,
         IDocumentService documentService)
     {
+        _logger = logger;
         _localizationService = localizationService;
         _configService = configService;
         _xPathService = xPathService;
@@ -71,9 +74,17 @@ public partial record InvoiceViewModel
             return;
 
         var viewModel = (InvoiceFieldViewModel)sender;
-        var node = _xPathService.Select(viewModel.FieldInfo)
-            ?? _xPathService.RegisterElement(viewModel.FieldInfo);
+        try
+        {
+            var node = _xPathService.Select(viewModel.FieldInfo)
+                ?? _xPathService.RegisterElement(viewModel.FieldInfo);
 
-        node?.InnerText = viewModel.Value;
+            node?.InnerText = viewModel.Value;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogErrorMessage(ex.Message);
+            _logger.LogErrorMessage($"OnFieldPropertyChanged failed for field key: {viewModel.FieldInfo.FieldKey}");
+        }
     }
 }

@@ -2,7 +2,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace ViewMyInvoice.Services;
 
-internal record ConfigService(ILogger<ConfigService> Logger, IConfiguration Configuration) : IConfigService
+public record ConfigService(ILogger<ConfigService> Logger, IConfiguration Configuration) : IConfigService
 {
     private const string CONFIG_SECTION = "InvoiceFieldConfig";
 

@@ -3,7 +3,7 @@ using Uno.Extensions.Specialized;
 
 namespace ViewMyInvoice.Services;
 
-internal class XPathService : IXPathService
+public class XPathService : IXPathService
 {
     private readonly Dictionary<InvoiceField, XmlNode> _xPathCache = [];
 

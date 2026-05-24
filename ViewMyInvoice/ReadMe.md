@@ -1,3 +1,13 @@
-# TODO
+## ViewMyInvoice
 
-- tests
+A cross-platform application for viewing and editing EN16931-compliant CII invoices. Supports loading XML files, searching via XPath queries defined in a (global) configuration file, and displaying structured invoice data. Meant for quick referencing of BT-fields, NOT for producing valid invoices.
+
+Built with [Uno Platform](https://github.com/unoplatform/uno).
+
+### Notes
+
+- changing language requires you to either reload the document, or restart the app
+- UBL is not supported
+- Core functionality relies on XML parsing and XPath navigation
+- After saving an edited invoice, it may not be valid anymore
+	- e.g. Schematron validation for CIUS XRechnung will fail with: Document MUST not contain empty elements.
